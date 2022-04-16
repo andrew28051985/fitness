@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {slider} from './modules/slider/slider';
 
 // ---------------------------------
 
@@ -9,6 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  slider();
+
 
   // Modules
   // ---------------------------------
