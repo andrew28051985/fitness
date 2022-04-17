@@ -15,6 +15,28 @@
     background-color: $color-torch-red;
   }
 
+  &--main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 18px 0;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-default-white;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    background: transparent;
+    border: 4px solid $color-default-white;
+
+    @include vp-767 {
+      padding: 19px 0;
+    }
+  }
+
   &:disabled {
     opacity: 0.5;
 
