@@ -1805,7 +1805,7 @@ button,
   margin-bottom: 12px;
   font-size: 49px;
   line-height: 49px;
-  grid-column: 3/-1;
+  grid-column: 1/-1;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
