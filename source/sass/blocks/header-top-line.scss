@@ -51,7 +51,9 @@
     line-height: 20px;
   }
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     opacity: 0.8;
   }
 }

@@ -32,7 +32,9 @@
   line-height: 21px;
   color: $color-default-white;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     opacity: 0.8;
   }
 }

@@ -164,7 +164,9 @@
   color: $color-default-white;
   text-transform: uppercase;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     opacity: 0.8;
   }
 }
