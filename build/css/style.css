@@ -2248,6 +2248,10 @@ button,
     position: relative;
   }
 
+  .footer__social li {
+    margin-right: 35px;
+  }
+
   .btn--main {
     padding: 19px 0;
   }
@@ -2324,7 +2328,7 @@ button,
     -ms-flex-align: end;
     align-items: flex-end;
     margin-top: -20px;
-    margin-bottom: 40px;
+    margin-bottom: 33px;
   }
 
   .footer-nav__list {
@@ -2341,8 +2345,8 @@ button,
   .footer-nav__list--right {
     -ms-flex-item-align: start;
     align-self: flex-start;
-    margin-right: 92px;
-    padding-top: 54px;
+    margin-right: 75px;
+    padding-top: 42px;
   }
 
   .footer-nav__list--left {
@@ -2352,7 +2356,7 @@ button,
 
   .footer-nav__item {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
   }
 
   .footer-nav__item:last-child {
