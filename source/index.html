@@ -26,19 +26,72 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+
+      <header class="header">
         <div class="container">
-          <h2>Хедер</h2>
+          <div class="header__wrapper">
+            <a>
+              <img src="img/svg/logo.svg"  class="logo" alt="логотип фитнес центра в виде слова supergym" width="89" height="20">
+            </a>
+            <div class="header__contacts">
+              <a href="tel:88005555555">8-800-555-55-55</a>
+            </div>
+          </div>
         </div>
       </header>
+
       <main>
-        <section class="intro">
+        <section class="main-screen">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <div class="main-screen__wrapper">
+              <h1 class="visually-hidden">Фитнес центр города Омск</h1>
+              <div class="main-screen__navigation">
+                <h2>
+                  Фитнес центр
+                </h2>
+                <span>Омск</span>
+                <nav class="main-nav">
+                  <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                      <a href="#">
+                        Тренажёрный зал
+                      </a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#">
+                        Групповые занятия
+                      </a>
+                    </li>
+                    <li class="main-nav__item">
+                      <a href="#">
+                        Кардио-зона
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <a href="#" class="btn">Купить абонемент</a>
+              </div>
+              <div class="main-screen__image">
+                <picture>
+                  <source type="image/webp" srcset="img/content/main-screen.webp, img/content/main-screen@2x.webp 2x">
+                  <!--1x: 500px; 2x: 1000px-->
+                  <img src="img/content/main-screen.jpg" srcset="img/content/main-screen@2x.jpg" alt="Мужчина в футболке супермена смотрящий вправо вверх в полумраке" width="500" height="556">
+                </picture>
+              </div>
+              <div class="main-screen__social">
+                <ul class="main-screen__social-list">
+                  <li class="main-screen__social-item">
+                    <a href="#">FB</a>
+                  </li>
+                  <li class="main-screen__social-item">
+                    <a href="#">VK</a>
+                  </li>
+                  <li class="main-screen__social-item">
+                    <a href="#">IG</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
 

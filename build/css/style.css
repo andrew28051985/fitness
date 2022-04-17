@@ -1539,9 +1539,66 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 60px;
+}
+
+.header {
+  background-color: black;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 30px 0 0;
+}
+
+.header__wrapper a {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-item-align: start;
+  -ms-grid-row-align: start;
+  align-self: start;
+}
+
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__contacts a {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  width: 89px;
+  height: 20px;
+  margin-right: 20px;
 }
 
 .btn {
@@ -1560,7 +1617,7 @@ button,
 }
 
 .btn--red {
-  background-color: #ff1553;
+  background-color: #ed0233;
 }
 
 .btn:disabled {
@@ -1781,11 +1838,40 @@ button,
   .container {
     padding: 0 45px;
   }
+
+  .header__wrapper {
+    padding: 40px 0 25px;
+  }
+
+  .header__contacts a {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  .logo {
+    width: 82px;
+    height: 17px;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .header__wrapper {
+    padding: 20px 0 0;
+  }
+
+  .header__contacts a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .logo {
+    width: 68px;
+    height: 15px;
   }
 
   .modal__wrapper {
