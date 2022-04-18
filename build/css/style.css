@@ -1960,6 +1960,134 @@ button,
   opacity: 0.8;
 }
 
+.gym {
+  padding: 120px 0;
+  padding-bottom: 231px;
+}
+
+.gym__wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 60px;
+}
+
+.gym__description {
+  max-width: 355px;
+  margin-right: 25px;
+}
+
+.gym__description h2,
+.gym__description small,
+.gym__description p {
+  color: #102654;
+}
+
+.gym__description h2 {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 9px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  font-family: "Bebas Neue";
+  letter-spacing: 0.03em;
+}
+
+.gym__description small {
+  display: inline-block;
+  margin-bottom: 38px;
+  font-size: 18px;
+  line-height: 27px;
+  vertical-align: baseline;
+}
+
+.gym__description p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.gym__description p:last-child {
+  margin-bottom: 0;
+}
+
+.gym__description + picture,
+.gym__description + picture img {
+  width: 660px;
+  height: 401px;
+}
+
+.gym__description + picture img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gym__video {
+  position: absolute;
+  bottom: -114px;
+  left: 437px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 364px;
+  height: 228px;
+}
+
+.gym__video img,
+.gym__transparent-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gym__video img {
+  z-index: 1;
+}
+
+.gym__transparent-img {
+  z-index: 2;
+  background: rgba(20, 54, 122, 0.5);
+}
+
+.gym__video button {
+  position: relative;
+  z-index: 3;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  background: url("../img/svg/button-play.svg") no-repeat 50% 50%;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.gym__video button:hover,
+.gym__video button:focus,
+.gym__video button:active {
+  opacity: 0.9;
+}
+
 .slider {
   padding: 50px 0;
 }
@@ -2167,6 +2295,10 @@ button,
     letter-spacing: 0.02em;
   }
 
+  .main-screen {
+    padding-bottom: 83px;
+  }
+
   .main-screen__wrapper {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -2220,6 +2352,66 @@ button,
     padding-top: 5px;
   }
 
+  .gym {
+    padding: 81px 0;
+    padding-bottom: 181px;
+  }
+
+  .gym__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .gym__description {
+    min-width: 502px;
+    max-width: 74%;
+    margin-right: 0;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .gym__description h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .gym__description small {
+    margin-bottom: 33px;
+  }
+
+  .gym__description p:last-child {
+    display: none;
+  }
+
+  .gym__description + picture,
+  .gym__description + picture img {
+    width: 100%;
+    height: 345px;
+  }
+
+  .gym__description + picture img {
+    height: 100%;
+  }
+
+  .gym__video {
+    bottom: -84px;
+    left: calc(50% - 133px);
+    width: 266px;
+    height: 167px;
+  }
+
+  .gym__video button {
+    width: 73px;
+    height: 73px;
+    background-size: 73px 73px;
+  }
+
   .footer-nav__item {
     margin-right: 30px;
   }
@@ -2228,6 +2420,10 @@ button,
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .container--gym {
+    padding: 0;
   }
 
   .header {
@@ -2291,6 +2487,10 @@ button,
     line-height: 20px;
   }
 
+  .main-screen {
+    padding-bottom: 51px;
+  }
+
   .main-screen__navigation {
     margin-right: 0;
     margin-bottom: 29px;
@@ -2326,6 +2526,49 @@ button,
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
+  }
+
+  .gym {
+    padding: 51px 0;
+    padding-bottom: 71px;
+  }
+
+  .gym__description {
+    min-width: 258px;
+    max-width: 100%;
+    margin-bottom: 34px;
+    padding: 0 15px;
+    text-align: left;
+  }
+
+  .gym__description h2 {
+    margin-bottom: 6px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .gym__description small {
+    margin-bottom: 24px;
+  }
+
+  .gym__description p {
+    min-width: 258px;
+    max-width: 88%;
+    margin: 0;
+  }
+
+  .gym__description + picture {
+    height: 313px;
+    margin-bottom: 40px;
+  }
+
+  .gym__video {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 
   .slider {
