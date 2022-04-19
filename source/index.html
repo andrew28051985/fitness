@@ -125,7 +125,8 @@
                 <!--1x: 660px; 2x: 1320px-->
                 <img src="img/content/gym.jpg" srcset="img/content/gym@2x.jpg" alt="тренажерный зал, светлый, белые стены на переднем плане велотренажеры и гантелли" width="660" height="401">
               </picture>
-              <div class="gym__video">
+              <div class="gym__video" id="player">
+                <script src="https://www.youtube.com/iframe_api"></script>
                 <picture>
                   <!--1x: 320px; 2x: 640px-->
                   <source type="image/webp" media="(max-width: 767px)" srcset="img/content/gym-video-mini.webp, img/content/gym-video-mini@2x.webp 2x">
@@ -135,7 +136,7 @@
                   <img src="img/content/gym-video.jpg" srcset="img/content/gym-video@2x.jpg" alt="заставка видео в виде вида в спортзал" width="364" height="228">
                 </picture>
                 <div class="gym__transparent-img"></div>
-                <button type="button"></button>
+                <button type="button" class="gym__video-control"></button>
               </div>
             </div>
           </div>
@@ -147,7 +148,7 @@
             <div class="slider__wrapper">
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Стоимость 1 <span>i</span></div>
                   <div class="swiper-slide">Slide 2</div>
                   <div class="swiper-slide">Slide 3</div>
                   <div class="swiper-slide">Slide 4</div>

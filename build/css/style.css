@@ -2171,6 +2171,11 @@ button,
   transform: rotate(135deg);
 }
 
+.swiper-slide span {
+  font-size: 50px;
+  font-family: "Rouble", "Arial", sans-serif;
+}
+
 .footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2300,9 +2305,9 @@ button,
   }
 
   .main-screen__wrapper {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .main-screen__navigation {
@@ -2494,8 +2499,8 @@ button,
   .main-screen__navigation {
     margin-right: 0;
     margin-bottom: 29px;
-    -ms-grid-columns: minmax(120px, 1fr) (3fr)[2];
-    grid-template-columns: minmax(120px, 1fr) repeat(2, 3fr);
+    -ms-grid-columns: 108px 91.5px 91.5px;
+    grid-template-columns: 108px 91.5px 91.5px;
     -ms-grid-rows: 40px 81px minmax(51px, auto) 103px;
     grid-template-rows: 40px 81px minmax(51px, auto) 103px;
   }
