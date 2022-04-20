@@ -1,0 +1,17 @@
+.subscription {
+  padding: 120px 0;
+
+  background-color: $color-ghost-white;
+}
+
+.subscription .title {
+  margin-bottom: 33px;
+
+  text-align: center;
+}
+
+.subscription__tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 39px;
+}
