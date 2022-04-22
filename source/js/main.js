@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {slider} from './modules/slider/slider';
 import {getVideo} from './modules/video/video';
+import {subscriptionCard} from './modules/subscription/subscription';
 
 // ---------------------------------
 
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     getVideo();
+    subscriptionCard();
   });
 });
 
