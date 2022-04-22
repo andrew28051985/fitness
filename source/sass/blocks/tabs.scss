@@ -16,10 +16,17 @@
 .tabs__item {
   display: block;
   flex-shrink: 0;
-  padding: 20px 23px;
+  padding: 20px 23px 11px;
 
   border-bottom: 2px solid $color-gray-transparent-20;
   cursor: pointer;
+
+  @include vp-1199 {
+    padding: 20px 27px 11px;
+  }
+  @include vp-767 {
+    padding: 20px 22px 11px;
+  }
 
   &--active {
     cursor: auto;
@@ -40,6 +47,15 @@
   color: $color-sapphire-transparent-50;
 
   user-select: none;
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .tabs__item:hover a,
@@ -49,7 +65,7 @@
 }
 
 .tabs__item--active a {
-  padding-bottom: 23px;
+  padding-bottom: 14px;
 
   color: $color-sapphire;
 
