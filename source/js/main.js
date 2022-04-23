@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {slider} from './modules/slider/slider';
 import {getVideo} from './modules/video/video';
 import {subscriptionCard, breakpointChecker} from './modules/subscription/subscription';
+import {scrollToLink} from './utils/scroll-link';
 
 // ---------------------------------
 
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  scrollToLink();
   slider();
 
 
