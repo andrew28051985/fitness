@@ -59,7 +59,7 @@ const countButtonClick = (evt) => {
     oldPrice = evt.target.parentNode.childNodes[5].textContent.replace(/[^0-9]/g, '');
     evt.preventDefault();
     count++;
-  } else if (!isButton && count === 0) {
+  } else if ((!isButton && count === 0) || (!isButton && count === 1)) {
     count = 1;
   } else if (isButton && count === 1) {
     const newButton = evt.target.parentNode.childNodes[1].textContent;
