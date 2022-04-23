@@ -2,7 +2,6 @@ const subscription = document.querySelector('.subscription');
 const tabs = subscription.querySelectorAll('.tabs__item');
 const cards = subscription.querySelectorAll('.card__list');
 const breakpoint = window.matchMedia('(max-width:1199px)');
-let isDesctop = false;
 let isMobile = false;
 
 const isEnterKey = (evt) => evt.key === 'Enter';
@@ -81,7 +80,6 @@ const onClickButtonCard = () => {
       if (card.classList.contains('card--active')) {
         const items = card.querySelectorAll('.card__item');
         items.forEach((item) => {
-          const button = item.querySelector('.btn');
           item.addEventListener('click', countButtonClick);
         });
       }
@@ -91,7 +89,6 @@ const onClickButtonCard = () => {
       if (card.classList.contains('card--active')) {
         const items = card.querySelectorAll('.card__item');
         items.forEach((item) => {
-          const button = item.querySelector('.btn');
           item.removeEventListener('click', countButtonClick);
         });
       }
@@ -102,9 +99,7 @@ const onClickButtonCard = () => {
 const breakpointChecker = () => {
   if (breakpoint.matches) {
     isMobile = true;
-    isDesctop = false;
   } else {
-    isDesctop = true;
     isMobile = false;
   }
   onClickButtonCard();
