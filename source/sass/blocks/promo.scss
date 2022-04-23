@@ -1,0 +1,109 @@
+.promo {
+  padding: 120px 0;
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__description {
+  display: grid;
+  flex-grow: 1;
+  align-self: stretch;
+  padding: 87px 78px;
+
+  background-color: $color-torch-red;
+
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(4, min-content);
+}
+
+.promo__description h4,
+.promo__description > p,
+.promo__data-number p,
+.promo__time p,
+.promo__description h3,
+.promo__description h4,
+.promo__description > p {
+  margin: 0;
+  padding: 0;
+}
+
+.promo__description h3 {
+  grid-row: span 2;
+}
+
+.promo__description > p {
+  margin-bottom: 55px;
+
+  grid-column: 1/3;
+}
+
+.promo__data {
+  width: 64px;
+}
+
+.promo__data h4,
+.promo__time h4 {
+  border-bottom: 1px solid $color-default-white;
+}
+
+.promo__time {
+  width: 92px;
+  margin-bottom: 10px;
+}
+
+.promo__description a {
+  grid-column: 1/3;
+}
+
+.promo__description h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 90px;
+  font-family: $ff-bebas;
+  color: $color-default-white;
+  letter-spacing: 0.03em;
+}
+
+.promo__data-number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__description h4,
+.promo__description > p,
+.promo__data-number p,
+.promo__time p {
+  font-family: $ff-roboto;
+  color: $color-default-white;
+}
+
+
+.promo__description h4,
+.promo__description > p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.promo__data-number p,
+.promo__time p {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.promo__month-year p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.promo__image {
+  flex-shrink: 0;
+}
