@@ -1,0 +1,246 @@
+.advantages {
+  padding: 120px 0;
+
+  background-color: $color-ghost-white;
+}
+
+.advantages__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+  @include vp-767 {
+    padding: 0 0;
+  }
+}
+
+.advantages h2 {
+  margin-bottom: 80px;
+
+  text-align: center;
+}
+
+.advantages__list {
+  display: grid;
+  justify-content: center;
+  min-width: 1040px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 0 60px;
+  grid-template-columns: 340px 240px 340px;
+  grid-template-rows: repeat(2, minmax(153px, 1fr));
+  @include vp-1199 {
+    min-width: 678px;
+
+    gap: 0 0;
+    grid-template-columns: 301px 1fr 315px;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  color: $color-sapphire;
+
+  @include vp-767 {
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-text,
+  &-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &-text {
+    order: 2;
+
+    @include vp-767 {
+      align-items: center;
+    }
+  }
+
+  &--square {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  &--parking {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  &--center {
+    flex-direction: column;
+
+    grid-column: 2/3;
+    grid-row: span 2;
+    @include vp-1199 {
+      width: 442px;
+      margin: 0 auto;
+
+      grid-column: span 3;
+      grid-row: 2/3;
+    }
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+
+  &--comfort {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    @include vp-1199 {
+      grid-row: 3/4;
+    }
+  }
+
+  &--experience {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    @include vp-1199 {
+      grid-row: 3/4;
+    }
+  }
+
+  &--square,
+  &--parking {
+    border-bottom: 2px solid $color-crimson-transparent-20;
+
+    @include vp-1199 {
+      border-bottom: none;
+    }
+    @include vp-767 {
+      align-items: center;
+    }
+  }
+
+  &--comfort,
+  &--experience {
+    align-items: flex-end;
+
+    @include vp-767 {
+      align-items: center;
+    }
+  }
+
+  &--center {
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: $color-default-white;
+
+    background-color: $color-resolution-blue;
+  }
+
+  &--center > .advantages__item-number--center {
+    align-items: center;
+  }
+}
+
+.advantages__item h3 {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+.advantages__item p {
+  margin: 0;
+
+  font-weight: 300;
+  line-height: 22px;
+
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.advantages__item-number {
+  margin-right: 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-persian-blue;
+
+  @include vp-767 {
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+.advantages__item-text h3 {
+  margin-bottom: 10px;
+}
+
+.advantages__item-text--center  p {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.advantages__item-number--center {
+  margin-right: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  color: $color-default-white;
+  & > p {
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 74px;
+  }
+
+  & > span {
+    font-size: 26px;
+    line-height: 39px;
+  }
+}
+
+.advantages__item-number {
+  & span:first-child {
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 68px;
+
+    background: $gradient-border;
+    -webkit-background-clip: text;
+            background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+  }
+}
+
+.advantages__item:first-child > .advantages__item-number > span:first-child {
+  background: $gradient-text;
+  -webkit-background-clip: text;
+          background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+          text-fill-color: transparent;
+}
