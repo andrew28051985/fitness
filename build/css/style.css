@@ -2569,6 +2569,10 @@ button,
   line-height: 60px;
 }
 
+.promo__month-year {
+  padding-top: 3px;
+}
+
 .promo__month-year p {
   margin-top: -3px;
   font-weight: 400;
