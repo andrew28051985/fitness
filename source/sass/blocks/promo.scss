@@ -90,11 +90,7 @@
 }
 
 .promo__data {
-  width: 64px;
-
-  @include vp-1199 {
-    width: 42px;
-  }
+  width: min-content;
 }
 
 .promo__data h4 {
@@ -194,6 +190,8 @@
 
 .promo__data-number p,
 .promo__time p {
+  margin-right: 5px;
+
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;

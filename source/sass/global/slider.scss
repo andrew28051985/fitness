@@ -1,16 +1,16 @@
-.slider {
-  padding: 50px 0;
-
-  @include vp-767 {
-    display: none;
-  }
-}
-
 .slider__wrapper {
   position: relative;
 
-  height: 40vh;
+  height: 294px;
   margin: 0 auto;
+
+  @include vp-1199 {
+    width: 566px;
+  }
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
 }
 
 .swiper {
@@ -33,8 +33,6 @@
 
   font-size: 18px;
   text-align: center;
-
-  background: gray;
 }
 
 .slider__button-next::after,
@@ -44,15 +42,29 @@
 
 .slider__button-next,
 .slider__button-prev {
+  top: 53%;
+
   color: #afafaf;
+
+  @include vp-767 {
+    top: 55%;
+  }
 }
 
 .slider__button-next {
-  right: -40px;
+  right: -54px;
+
+  @include vp-767 {
+    right: -41px;
+  }
 }
 
 .slider__button-prev {
-  left: -40px;
+  left: -52px;
+
+  @include vp-767 {
+    left: -29px;
+  }
 }
 
 .slider__button-next::before,
@@ -62,11 +74,16 @@
   top: 0;
   left: 0;
 
-  width: 27px;
-  height: 27px;
+  width: 24px;
+  height: 24px;
 
   border-right: 1px solid #afafaf;
   border-bottom: 1px solid #afafaf;
+
+  @include vp-767 {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .slider__button-next::before {
@@ -75,9 +92,4 @@
 
 .slider__button-prev::before {
   transform: rotate(135deg);
-}
-//Пример отображения знака рубля
-.swiper-slide span {
-  font-size: 50px;
-  font-family: $ff-rouble;
 }
