@@ -3154,6 +3154,14 @@ button,
   opacity: 0.8;
 }
 
+.feedback {
+  padding-bottom: 120px;
+}
+
+.feedback h2 {
+  text-align: center;
+}
+
 .footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
