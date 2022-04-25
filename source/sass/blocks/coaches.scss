@@ -28,7 +28,6 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  // background-color: tomato;
 
   cursor: pointer;
 }
@@ -75,19 +74,20 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 53px 36px 53px 36px;
+  padding: 53px 30px 30px 36px;
   overflow-y: scroll;
 
   color: $color-default-white;
 
   background: $color-sapphire-transparent-89;
   cursor: pointer;
-
+  /*
   @include vp-767 {
     padding: 48px 30px;
-  }
+  }*/
+
   @include vp-767 {
-    padding: 42px 25px;
+    padding: 42px 25px 30px;
   }
 }
 

@@ -2660,11 +2660,15 @@ button,
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 53px 36px 53px 36px;
+  padding: 53px 30px 30px 36px;
   overflow-y: scroll;
   color: #ffffff;
   background: rgba(16, 38, 84, 0.89);
   cursor: pointer;
+  /*
+  @include vp-767 {
+    padding: 48px 30px;
+  }*/
 }
 
 .swiper-slide:hover .coaches__slide-hover {
@@ -3760,11 +3764,7 @@ button,
   }
 
   .coaches__slide-hover {
-    padding: 48px 30px;
-  }
-
-  .coaches__slide-hover {
-    padding: 42px 25px;
+    padding: 42px 25px 30px;
   }
 
   .coaches__slide-hover li {
