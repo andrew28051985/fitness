@@ -2949,6 +2949,211 @@ button,
   -webkit-text-fill-color: transparent;
 }
 
+.stocks {
+  padding: 120px 0;
+}
+
+.stocks h2 {
+  margin-bottom: 51px;
+  text-align: center;
+}
+
+.stocks__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.stocks__main-card,
+.stocks__cards {
+  width: 560px;
+}
+
+.stocks__main-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.stocks__main-card-text,
+.stocks__main-card-image {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+}
+
+.stocks__main-card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 44px;
+  color: #ffffff;
+  background-color: #ed0233;
+}
+
+.stocks__price,
+.stocks__description {
+  margin: 0;
+}
+
+.stocks__price {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+}
+
+.stocks__main-card-text span {
+  display: block;
+  font-size: 70px;
+  line-height: 74px;
+}
+
+.stocks__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.stocks__main-card-text a {
+  display: block;
+  margin-top: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #ffffff;
+}
+
+.stocks__main-card-text a:hover {
+  opacity: 0.8;
+}
+
+.stocks__main-card-image {
+  width: 280px;
+  overflow: hidden;
+}
+
+.stocks__main-card-image img {
+  height: 462px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: -51px 0;
+  object-position: -51px 0;
+}
+
+.stocks__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.stocks__cards p,
+.stocks__cards dd {
+  margin: 0;
+}
+
+.stocks__cards dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 47%;
+  flex-basis: 47%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  min-height: 211px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 28px;
+  border: 7px solid;
+  border-image-source: linear-gradient(142.51deg, #d10a42 0%, #00359f 100%);
+  border-image-slice: 1;
+}
+
+.stocks__cards dl:last-child {
+  margin-bottom: 0;
+}
+
+.stocks__cards dt p {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 26px;
+  color: #1c3374;
+}
+
+.stocks__cards dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 77%;
+  flex-basis: 77%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.stocks__cards dd p {
+  line-height: 22px;
+  color: #1c3374;
+}
+
+.stocks__cards dd a {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1c3374;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid;
+}
+
+.stocks__cards dd a:hover {
+  opacity: 0.8;
+}
+
 .footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3444,6 +3649,67 @@ button,
     line-height: 56px;
   }
 
+  .stocks {
+    padding: 100px 0;
+  }
+
+  .stocks h2 {
+    margin-bottom: 41px;
+  }
+
+  .stocks__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .stocks__main-card,
+  .stocks__cards {
+    width: 100%;
+  }
+
+  .stocks__main-card {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .stocks__main-card-image {
+    width: 100%;
+    min-width: 399px;
+  }
+
+  .stocks__main-card-image img {
+    width: 100%;
+    -o-object-position: top;
+    object-position: top;
+  }
+
+  .stocks__cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: 211px;
+  }
+
+  .stocks__cards dl {
+    -ms-flex-preferred-size: 47.7%;
+    flex-basis: 47.7%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .stocks__cards dl:nth-child(2n) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
   .footer-nav__item {
     margin-right: 30px;
   }
@@ -3853,6 +4119,78 @@ button,
     -ms-flex-align: center;
     align-items: center;
     margin-right: 0;
+  }
+
+  .stocks {
+    padding: 70px 0;
+  }
+
+  .stocks h2 {
+    margin-bottom: 44px;
+  }
+
+  .stocks__wrapper {
+    text-align: center;
+  }
+
+  .stocks__main-card,
+  .stocks__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .stocks__main-card-text {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .stocks__price {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .stocks__description {
+    margin-bottom: 31px;
+  }
+
+  .stocks__main-card-image {
+    min-width: 290px;
+    height: 299px;
+  }
+
+  .stocks__main-card-image img {
+    height: 299px;
+  }
+
+  .stocks__cards dl {
+    min-height: 211px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding-bottom: 37px;
+  }
+
+  .stocks__cards dl:last-child {
+    margin-bottom: 0;
+  }
+
+  .stocks__cards dt p {
+    margin-bottom: 6px;
+    line-height: 41px;
+  }
+
+  .stocks__cards dd {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  .stocks__cards dd a {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .footer-nav {

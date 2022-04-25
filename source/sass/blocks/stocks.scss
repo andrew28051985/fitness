@@ -1,0 +1,276 @@
+.stocks {
+  padding: 120px 0;
+
+  @include vp-1199 {
+    padding: 100px 0;
+  }
+  @include vp-767 {
+    padding: 70px 0;
+  }
+}
+
+.stocks h2 {
+  margin-bottom: 51px;
+
+  text-align: center;
+
+  @include vp-1199 {
+    margin-bottom: 41px;
+  }
+  @include vp-767 {
+    margin-bottom: 44px;
+  }
+}
+
+.stocks__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include vp-1199 {
+    flex-direction: column;
+    align-items: center;
+  }
+  @include vp-767 {
+    text-align: center;
+  }
+}
+
+.stocks__main-card,
+.stocks__cards {
+  width: 560px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.stocks__main-card {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin-right: 40px;
+
+  @include vp-1199 {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.stocks__main-card-text,
+.stocks__main-card-image {
+  flex-basis: 50%;
+  align-self: stretch;
+}
+
+.stocks__main-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 44px;
+
+  color: $color-default-white;
+
+  background-color: $color-torch-red;
+
+  @include vp-767 {
+    align-items: center;
+  }
+}
+
+.stocks__price,
+.stocks__description {
+  margin: 0;
+}
+
+.stocks__price {
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 28px;
+
+  @include vp-767 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.stocks__main-card-text span {
+  display: block;
+
+  font-size: 70px;
+  line-height: 74px;
+}
+
+.stocks__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+
+  @include vp-767 {
+    margin-bottom: 31px;
+  }
+}
+
+.stocks__main-card-text a {
+  display: block;
+  margin-top: auto;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  border-bottom: 1px solid $color-default-white;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.stocks__main-card-image {
+  width: 280px;
+  overflow: hidden;
+
+  @include vp-1199 {
+    width: 100%;
+    min-width: 399px;
+  }
+  @include vp-767 {
+    min-width: 290px;
+    height: 299px;
+  }
+
+  & img {
+    height: 462px;
+
+    @include vp-1199 {
+      width: 100%;
+
+      object-position: top;
+    }
+    @include vp-767 {
+      height: 299px;
+    }
+    object-fit: cover;
+    object-position: -51px 0;
+  }
+}
+
+.stocks__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: stretch;
+
+  @include vp-1199 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 211px;
+  }
+}
+
+.stocks__cards p,
+.stocks__cards dd {
+  margin: 0;
+}
+
+.stocks__cards dl {
+  display: flex;
+  flex-basis: 47%;
+  flex-direction: column;
+  align-self: stretch;
+  min-height: 211px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 28px;
+
+  border: 7px solid;
+  border-image-source: linear-gradient(142.51deg, #d10a42 0%, #00359f 100%);
+  border-image-slice: 1;
+
+  @include vp-1199 {
+    flex-basis: 47.7%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+  @include vp-767 {
+    min-height: 211px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    padding-bottom: 37px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.stocks__cards dt {
+  & p {
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    color: $color-resolution-blue;
+
+    @include vp-767 {
+      margin-bottom: 6px;
+
+      line-height: 41px;
+    }
+  }
+}
+
+.stocks__cards dd {
+  display: flex;
+  flex-basis: 77%;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include vp-767 {
+    flex-grow: 1;
+  }
+
+  & p {
+    line-height: 22px;
+    color: $color-resolution-blue;
+  }
+
+  & a {
+    align-self: flex-start;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: $color-resolution-blue;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    border-bottom: 1px solid;
+
+    @include vp-767 {
+      align-self: center;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
