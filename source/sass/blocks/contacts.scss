@@ -1,0 +1,124 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.contacts__free-lesson {
+  background-color: $color-sapphire;
+}
+
+.contacts__free-lesson,
+.contacts__description {
+  flex-basis: 50%;
+  align-self: stretch;
+  padding: 70px 0;
+}
+
+.contacts__free-lesson-wrapper {
+  box-sizing: content-box;
+  width: 410px;
+  margin-right: 170px;
+  margin-left: auto;
+  padding-left: 103px;
+}
+
+.contacts__free-lesson-wrapper h3 {
+  margin-bottom: 58px;
+
+  color: $color-default-white;
+
+  &:first-child {
+    margin-bottom: 51px;
+  }
+}
+
+.contacts form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 410px;
+
+  & input {
+    min-width: 190px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $color-light-slate-grey;
+    cursor: pointer;
+  }
+
+  & input::-webkit-input-placeholder,
+  & input {
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+  }
+
+  & button {
+    flex-basis: 100%;
+    justify-content: center;
+    margin: 0;
+    margin-top: 30px;
+  }
+}
+
+.contacts__description {
+  border-top: 1px solid $color-light-slate-grey;
+}
+
+.contacts__description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 120px;
+
+  & dl,
+  & dd {
+    margin: 0;
+  }
+
+  & dl {
+    padding-right: 60px;
+
+    border-right: 1px solid $color-light-slate-grey;
+  }
+
+  & dl:last-child {
+    padding-right: 0;
+    padding-left: 60px;
+
+    border: none;
+  }
+
+  & dd {
+    margin-bottom: 30px;
+  }
+
+  & dd:last-child {
+    margin-bottom: 0;
+  }
+
+  & dt {
+    font-weight: 700;
+    color: $color-sapphire;
+  }
+
+  & p,
+  & a {
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-sapphire;
+  }
+}
+
+.contacts__description-wrapper h3 {
+  flex-basis: 100%;
+  margin-bottom: 57px;
+
+  color: $color-sapphire;
+}
