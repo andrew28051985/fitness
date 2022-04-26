@@ -1,38 +1,26 @@
 .slider__wrapper {
   position: relative;
 
-  height: 294px;
   margin: 0 auto;
-
-  @include vp-1199 {
-    width: 566px;
-  }
-  @include vp-767 {
-    width: 226px;
-    height: 274px;
-  }
 }
 
-.swiper {
+.slider .swiper {
   position: relative;
 
   width: 100%;
   height: 100%;
 }
 
-.swiper-wrapper {
+.slider .swiper-wrapper {
   display: flex;
   align-items: center;
 }
 
-.swiper-slide {
+.slider .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-
-  font-size: 18px;
-  text-align: center;
 }
 
 .slider__button-next::after,

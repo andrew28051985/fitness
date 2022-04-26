@@ -152,3 +152,21 @@
     }
   }
 }
+
+.coaches .slider__wrapper {
+  height: 294px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    width: 566px;
+  }
+  @include vp-767 {
+    width: 226px;
+    height: 274px;
+  }
+}
+
+.cosches .slider__wrapper {
+  font-size: 18px;
+  text-align: center;
+}

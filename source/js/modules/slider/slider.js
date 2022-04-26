@@ -1,38 +1,57 @@
+/* eslint-disable no-unused-vars */
 import Swiper from '../../vendor/swiper';
 
-const slider = () => {
-  const swiper = new Swiper('.mySwiper-coaches', {
+const sliderCoaches = () => {
+  const swiperCoaches = new Swiper('.mySwiper-coaches', {
     slidesPerView: 4,
     spaceBetween: 40,
     slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: '.slider__button-next',
-      prevEl: '.slider__button-prev',
+      nextEl: '.slider__button-next--coaches',
+      prevEl: '.slider__button-prev--coaches',
     },
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 1,
         spaceBetween: 20,
       },
-      // when window width is >= 768px
       768: {
         slidesPerView: 2,
         spaceBetween: 30,
       },
-      // when window width is >= 1200px
       1200: {
         slidesPerView: 4,
         spaceBetween: 40,
       },
     },
   });
+};
 
-  swiper.on('slideChange', function () {
-    console.log('слайд переключен');
+const sliderFeedback = () => {
+  const swiperFeedback = new Swiper('.mySwiper-feedback', {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    slidesPerGroup: 1,
+    loop: false,
+    loopFillGroupWithBlank: false,
+    navigation: {
+      nextEl: '.slider__button-next--feedback',
+      prevEl: '.slider__button-prev--feedback',
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 20,
+      },
+      768: {
+        spaceBetween: 30,
+      },
+      1200: {
+        spaceBetween: 40,
+      },
+    },
   });
 };
 
-export {slider};
+export {sliderCoaches, sliderFeedback};
