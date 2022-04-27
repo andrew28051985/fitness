@@ -76,12 +76,6 @@
   }
 }
 
-.contacts__description {
-  @include vp-1199 {
-    padding-bottom: 62px;
-  }
-}
-
 .contacts__free-lesson-wrapper {
   box-sizing: content-box;
   width: 410px;
@@ -178,6 +172,7 @@
 
   @include vp-1199 {
     justify-content: flex-start;
+    padding-bottom: 62px;
   }
 }
 

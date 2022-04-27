@@ -135,7 +135,7 @@
     padding-left: 25px;
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 7px;

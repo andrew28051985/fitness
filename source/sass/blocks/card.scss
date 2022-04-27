@@ -137,7 +137,7 @@
     line-height: 72px;
   }
 
-  &:before {
+  &::before {
     content: attr(data-shadow);
     position: absolute;
     top: -63px;

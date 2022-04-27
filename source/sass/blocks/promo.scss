@@ -44,8 +44,6 @@
   }
 }
 
-.promo__description h4,
-.promo__description > p,
 .promo__data-number p,
 .promo__time p,
 .promo__description h3,
@@ -53,15 +51,6 @@
 .promo__description > p {
   margin: 0;
   padding: 0;
-}
-
-.promo__description h3 {
-  margin-right: 50px;
-
-  grid-row: span 2;
-  @include vp-1199 {
-    margin-right: 30px;
-  }
 }
 
 .promo__description > p {
@@ -139,6 +128,8 @@
 }
 
 .promo__description h3 {
+  margin-right: 50px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 90px;
@@ -147,7 +138,10 @@
   color: $color-default-white;
   letter-spacing: 0.03em;
 
+  grid-row: span 2;
   @include vp-1199 {
+    margin-right: 30px;
+
     font-size: 52px;
     line-height: 52px;
   }

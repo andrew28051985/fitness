@@ -384,6 +384,8 @@ template {
   display: none;
 }
 
+/* stylelint-disable */
+
 /**
  * Swiper 8.1.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1550,7 +1552,7 @@ button,
   font-weight: 700;
   font-size: 49px;
   line-height: 49px;
-  font-family: "Bebas Neue";
+  font-family: "Bebas Neue", "Arial", sans-serif;
   letter-spacing: 0.03em;
 }
 
@@ -1759,7 +1761,6 @@ button,
   align-items: center;
   width: 100%;
   margin: 0;
-  padding: 0;
   padding: 24px 0;
   font-weight: 700;
   font-size: 12px;
@@ -2397,7 +2398,7 @@ button,
   color: #103aae;
 }
 
-.card__item p:before {
+.card__item p::before {
   content: attr(data-shadow);
   position: absolute;
   top: -63px;
@@ -2457,8 +2458,6 @@ button,
   grid-template-rows: repeat(4, min-content);
 }
 
-.promo__description h4,
-.promo__description > p,
 .promo__data-number p,
 .promo__time p,
 .promo__description h3,
@@ -2466,12 +2465,6 @@ button,
 .promo__description > p {
   margin: 0;
   padding: 0;
-}
-
-.promo__description h3 {
-  margin-right: 50px;
-  -ms-grid-row-span: 2;
-  grid-row: span 2;
 }
 
 .promo__description > p {
@@ -2522,6 +2515,7 @@ button,
 }
 
 .promo__description h3 {
+  margin-right: 50px;
   font-style: normal;
   font-weight: 700;
   font-size: 90px;
@@ -2529,6 +2523,8 @@ button,
   font-family: "Bebas Neue", "Arial", sans-serif;
   color: #ffffff;
   letter-spacing: 0.03em;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
 }
 
 .promo__data-number {
@@ -2706,7 +2702,7 @@ button,
   text-align: left;
 }
 
-.coaches__slide-hover li:before {
+.coaches__slide-hover li::before {
   content: "";
   position: absolute;
   top: 7px;
@@ -2796,15 +2792,6 @@ button,
   order: 2;
 }
 
-.advantages__item--square {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
 .advantages__item--parking {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
@@ -2833,15 +2820,6 @@ button,
   grid-column: 2/3;
   -ms-grid-row-span: 2;
   grid-row: span 2;
-}
-
-.advantages__item--comfort {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
 }
 
 .advantages__item--experience {
@@ -2873,10 +2851,22 @@ button,
 
 .advantages__item--square {
   padding-left: 27px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
 .advantages__item--comfort {
   padding-left: 20px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
 }
 
 .advantages__item--square > .advantages__item-number,
@@ -2913,6 +2903,10 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: #2e35ac;
+}
+
+.advantages__item-number--900 {
+  margin-right: 0;
 }
 
 .advantages__item-text--center p {
@@ -2954,7 +2948,6 @@ button,
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .stocks {
@@ -3190,6 +3183,31 @@ button,
   background-color: #1c3374;
 }
 
+.feedback__slide h3,
+.feedback__slide p {
+  margin: 0;
+  color: #ffffff;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.feedback__slide h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.feedback__slide p {
+  line-height: 22px;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
 .feedback__slide-wrapper {
   display: -ms-grid;
   display: grid;
@@ -3230,31 +3248,6 @@ button,
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
-}
-
-.feedback__slide h3,
-.feedback__slide p {
-  margin: 0;
-  color: #ffffff;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-}
-
-.feedback__slide h3 {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 30px;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
-.feedback__slide p {
-  line-height: 22px;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
 }
 
 .contacts {
@@ -3765,10 +3758,6 @@ button,
     padding: 51px 45px 47px;
   }
 
-  .promo__description h3 {
-    margin-right: 30px;
-  }
-
   .promo__description > p {
     margin-top: 0;
     margin-bottom: 30px;
@@ -3801,6 +3790,7 @@ button,
   }
 
   .promo__description h3 {
+    margin-right: 30px;
     font-size: 52px;
     line-height: 52px;
   }
@@ -3888,12 +3878,6 @@ button,
     grid-row: 2/3;
   }
 
-  .advantages__item--comfort {
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3/4;
-  }
-
   .advantages__item--experience {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -3911,6 +3895,9 @@ button,
 
   .advantages__item--comfort {
     padding-left: 0;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
   }
 
   .advantages__item h3 {
@@ -4048,10 +4035,6 @@ button,
     background-color: #102654;
   }
 
-  .contacts__description {
-    padding-bottom: 62px;
-  }
-
   .contacts__free-lesson-wrapper {
     width: 100%;
     margin: 0;
@@ -4074,6 +4057,7 @@ button,
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    padding-bottom: 62px;
   }
 
   .contacts__description-wrapper {
@@ -4351,7 +4335,7 @@ button,
     line-height: 72px;
   }
 
-  .card__item p:before {
+  .card__item p::before {
     top: -50px;
     font-size: 80px;
     line-height: 120px;
@@ -4422,7 +4406,7 @@ button,
     padding-left: 25px;
   }
 
-  .coaches__slide-hover li:before {
+  .coaches__slide-hover li::before {
     left: 10px;
   }
 
@@ -4524,6 +4508,10 @@ button,
     margin-right: 0;
   }
 
+  .advantages__item-number--900 {
+    margin-bottom: 0;
+  }
+
   .stocks {
     padding: 70px 0;
   }
@@ -4610,6 +4598,18 @@ button,
     padding-top: 42px;
   }
 
+  .feedback__slide h3 {
+    margin: 9px 8px 0 0;
+    line-height: 25px;
+  }
+
+  .feedback__slide p {
+    text-align: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+
   .feedback__slide-wrapper {
     height: 260px;
     gap: 15px 15px;
@@ -4625,18 +4625,6 @@ button,
     grid-row: 1/2;
     -ms-grid-column-align: center;
     justify-self: center;
-  }
-
-  .feedback__slide h3 {
-    margin: 9px 8px 0 0;
-    line-height: 25px;
-  }
-
-  .feedback__slide p {
-    text-align: center;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1/3;
   }
 
   .contacts__container {
