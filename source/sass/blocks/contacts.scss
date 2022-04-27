@@ -54,16 +54,10 @@
   }
 }
 
-.contacts__free-lesson {
-  @include vp-1199 {
-    background-color: $color-sapphire;
-  }
-}
-
 .contacts__free-lesson,
 .contacts__description {
   align-self: stretch;
-  padding: 70px 0;
+  padding: 70px 0 60px;
 
   @include vp-1199 {
     padding: 70px 163px 70px 133px;
@@ -71,6 +65,20 @@
   @include vp-767 {
     padding-right: 15px;
     padding-left: 15px;
+  }
+}
+
+.contacts__free-lesson {
+  @include vp-1199 {
+    padding-bottom: 66px;
+
+    background-color: $color-sapphire;
+  }
+}
+
+.contacts__description {
+  @include vp-1199 {
+    padding-bottom: 62px;
   }
 }
 
@@ -92,7 +100,14 @@
   color: $color-default-white;
 
   &:first-child {
-    margin-bottom: 51px;
+    margin-bottom: 36px;
+
+    @include vp-1199 {
+      margin-bottom: 29px;
+    }
+    @include vp-767 {
+      margin-bottom: 33px;
+    }
   }
 }
 
@@ -122,18 +137,18 @@
     cursor: pointer;
 
     @include vp-1199 {
-      width: 45%;
+      width: 44%;
     }
     @include vp-767 {
       width: 100%;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
 
   & input::-webkit-input-placeholder,
   & input {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 15px;
     color: $color-default-white;
   }
 
@@ -141,10 +156,15 @@
     flex-basis: 100%;
     justify-content: center;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 27px;
+
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 
     @include vp-767 {
-      margin-top: 0;
+      margin-top: 7px;
     }
   }
 }
@@ -152,6 +172,7 @@
 .contacts__description {
   display: flex;
   justify-content: flex-end;
+  margin-right: 5px;
 
   @include vp-1199 {
     justify-content: flex-start;
@@ -181,8 +202,11 @@
 
     border-right: 1px solid $color-light-slate-grey;
 
+    @include vp-1199 {
+      padding-right: 49px;
+    }
     @include vp-767 {
-      margin-bottom: 35px;
+      margin-bottom: 19px;
       padding-right: 0;
 
       border: none;
@@ -195,6 +219,9 @@
 
     border: none;
 
+    @include vp-1199 {
+      padding-left: 47px;
+    }
     @include vp-767 {
       margin-bottom: 0;
       padding-left: 0;
@@ -210,13 +237,19 @@
   }
 
   & dt {
-    margin-top: 30px;
+    margin-top: 22px;
 
     font-weight: 700;
     color: $color-sapphire;
 
+    @include vp-1199 {
+      margin-bottom: 5px;
+
+      font-size: 20px;
+      line-height: 30px;
+    }
     @include vp-767 {
-      margin-top: 35px;
+      margin-top: 23px;
     }
 
     &:first-child {
@@ -232,12 +265,29 @@
     font-size: 14px;
     line-height: 21px;
     color: $color-sapphire;
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  & a:hover,
+  & a:active,
+  & a:focus {
+    opacity: 0.8;
   }
 }
 
 .contacts__description-wrapper h3 {
   flex-basis: 100%;
-  margin-bottom: 57px;
+  margin-bottom: 39px;
+  margin-left: -5px;
 
   color: $color-sapphire;
+
+  @include vp-1199 {
+    margin-bottom: 31px;
+    margin-left: 0;
+  }
 }

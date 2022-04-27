@@ -4,11 +4,13 @@
   align-items: center;
   //width: 100%;
   max-width: 920px;
+  margin-left: 41px;
 
   @include vp-767 {
     align-items: flex-end;
     margin-top: -20px;
     margin-bottom: 33px;
+    margin-left: 0;
   }
 }
 
@@ -29,6 +31,9 @@
   //column-gap: 40px;
   //grid-template-columns: repeat(auto-fit, minmax(40px, max-content));
 
+  @include vp-1199 {
+    margin-right: 30px;
+  }
   @include vp-767 {
     //display: flex;
     flex-direction: column;
@@ -50,6 +55,9 @@
   &--left {
     //justify-content: start;
     //margin-right: 40px;
+    @include vp-1199 {
+      margin-right: 40px;
+    }
     @include vp-767 {
       align-self: flex-start;
     }
