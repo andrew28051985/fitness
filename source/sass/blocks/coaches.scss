@@ -153,7 +153,9 @@
   }
 }
 
-.coaches .slider__wrapper {
+.coaches .slider--wrapper {
+  position: relative;
+
   height: 294px;
   margin: 0 auto;
 
@@ -166,7 +168,7 @@
   }
 }
 
-.cosches .slider__wrapper {
+.cosches .slider--wrapper {
   font-size: 18px;
   text-align: center;
 }

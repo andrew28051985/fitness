@@ -1,6 +1,6 @@
 const subscription = document.querySelector('.subscription');
 const tabs = subscription.querySelectorAll('.tabs__item');
-const cards = subscription.querySelectorAll('.card__list');
+const cards = subscription.querySelectorAll('.card--list');
 const breakpoint = window.matchMedia('(max-width:1199px)');
 let isMobile = false;
 

@@ -193,7 +193,7 @@
   padding: 28px;
 
   border: 7px solid;
-  border-image-source: linear-gradient(142.51deg, #d10a42 0%, #00359f 100%);
+  border-image-source: $gradient-border;
   border-image-slice: 1;
 
   @include vp-1199 {

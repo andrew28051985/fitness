@@ -1544,7 +1544,7 @@ button,
   padding: 0 60px;
 }
 
-.title__section {
+.title--section {
   margin: 0;
   padding: 0;
   font-weight: 700;
@@ -2322,7 +2322,7 @@ button,
   display: flex;
 }
 
-.card__list {
+.card--list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2717,12 +2717,13 @@ button,
   border-radius: 50%;
 }
 
-.coaches .slider__wrapper {
+.coaches .slider--wrapper {
+  position: relative;
   height: 294px;
   margin: 0 auto;
 }
 
-.cosches .slider__wrapper {
+.cosches .slider--wrapper {
   font-size: 18px;
   text-align: center;
 }
@@ -3171,8 +3172,10 @@ button,
 }
 
 .feedback .slider {
+  position: relative;
   width: 560px;
   height: 242px;
+  margin: 0 auto;
 }
 
 .feedback .swiper-slide {
@@ -3540,7 +3543,7 @@ button,
     padding: 0 45px;
   }
 
-  .title__section {
+  .title--section {
     font-size: 42px;
     line-height: 42px;
   }
@@ -3848,7 +3851,7 @@ button,
     margin-left: -6px;
   }
 
-  .coaches .slider__wrapper {
+  .coaches .slider--wrapper {
     width: 566px;
   }
 
@@ -4124,7 +4127,7 @@ button,
     padding: 0;
   }
 
-  .title__section {
+  .title--section {
     font-size: 32px;
     line-height: 32px;
   }
@@ -4423,7 +4426,7 @@ button,
     left: 10px;
   }
 
-  .coaches .slider__wrapper {
+  .coaches .slider--wrapper {
     width: 226px;
     height: 274px;
   }
