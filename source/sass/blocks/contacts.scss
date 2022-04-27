@@ -1,17 +1,77 @@
 .contacts {
+  position: relative;
+
+  @include vp-1199 {
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 50%;
+    height: 100%;
+
+    background-color: $color-sapphire;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 50%;
+    height: 1px;
+
+    background-color: $color-light-slate-grey;
+  }
+}
+
+.contacts__container {
+  @include vp-1199 {
+    padding: 0;
+  }
+  @include vp-767 {
+    padding: 0;
+  }
+}
+
+.contacts__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+
+  @include vp-1199 {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
+
 .contacts__free-lesson {
-  background-color: $color-sapphire;
+  @include vp-1199 {
+    background-color: $color-sapphire;
+  }
 }
 
 .contacts__free-lesson,
 .contacts__description {
-  flex-basis: 50%;
   align-self: stretch;
   padding: 70px 0;
+
+  @include vp-1199 {
+    padding: 70px 163px 70px 133px;
+  }
+  @include vp-767 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .contacts__free-lesson-wrapper {
@@ -19,7 +79,11 @@
   width: 410px;
   margin-right: 170px;
   margin-left: auto;
-  padding-left: 103px;
+
+  @include vp-1199 {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .contacts__free-lesson-wrapper h3 {
@@ -39,6 +103,14 @@
   align-items: center;
   max-width: 410px;
 
+  @include vp-1199 {
+    min-width: 410px;
+    max-width: 100%;
+  }
+  @include vp-767 {
+    min-width: 290px;
+  }
+
   & input {
     min-width: 190px;
     padding-top: 7px;
@@ -48,6 +120,14 @@
     border: none;
     border-bottom: 1px solid $color-light-slate-grey;
     cursor: pointer;
+
+    @include vp-1199 {
+      width: 45%;
+    }
+    @include vp-767 {
+      width: 100%;
+      margin-bottom: 40px;
+    }
   }
 
   & input::-webkit-input-placeholder,
@@ -62,17 +142,34 @@
     justify-content: center;
     margin: 0;
     margin-top: 30px;
+
+    @include vp-767 {
+      margin-top: 0;
+    }
   }
 }
 
 .contacts__description {
-  border-top: 1px solid $color-light-slate-grey;
+  display: flex;
+  justify-content: flex-end;
+
+  @include vp-1199 {
+    justify-content: flex-start;
+  }
 }
 
 .contacts__description-wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 120px;
+  width: 450px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+  @include vp-767 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 
   & dl,
   & dd {
@@ -83,6 +180,13 @@
     padding-right: 60px;
 
     border-right: 1px solid $color-light-slate-grey;
+
+    @include vp-767 {
+      margin-bottom: 35px;
+      padding-right: 0;
+
+      border: none;
+    }
   }
 
   & dl:last-child {
@@ -90,10 +194,15 @@
     padding-left: 60px;
 
     border: none;
+
+    @include vp-767 {
+      margin-bottom: 0;
+      padding-left: 0;
+    }
   }
 
   & dd {
-    margin-bottom: 30px;
+    margin-bottom: 1px;
   }
 
   & dd:last-child {
@@ -101,8 +210,18 @@
   }
 
   & dt {
+    margin-top: 30px;
+
     font-weight: 700;
     color: $color-sapphire;
+
+    @include vp-767 {
+      margin-top: 35px;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   & p,
