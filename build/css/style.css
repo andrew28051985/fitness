@@ -3317,6 +3317,7 @@ button,
 }
 
 .contacts form {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3438,6 +3439,14 @@ button,
   color: #102654;
 }
 
+.error {
+  position: absolute;
+  bottom: -45px;
+  padding: 0;
+  font-weight: 600;
+  color: #b80027;
+}
+
 .footer-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3471,11 +3480,6 @@ button,
   padding: 0;
   list-style: none;
 }
-
-/*
-.footer-nav__list:last-child {
-  margin-right: 0;
-}*/
 
 .footer-nav__item {
   margin-right: 40px;
@@ -4681,6 +4685,10 @@ button,
 
   .contacts__description-wrapper dt {
     margin-top: 23px;
+  }
+
+  .error {
+    bottom: -75px;
   }
 
   .footer-nav {

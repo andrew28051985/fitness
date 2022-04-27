@@ -4,6 +4,7 @@ import {sliderCoaches, sliderFeedback} from './modules/slider/slider';
 import {getVideo} from './modules/video/video';
 import {subscriptionCard, breakpointChecker} from './modules/subscription/subscription';
 import {scrollToLink} from './utils/scroll-link';
+import {validityForm, sendUserFormData, contactsForm, inputPhoneContacts, inputNameContacts} from './modules/form/form';
 
 // ---------------------------------
 
@@ -27,6 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
     subscriptionCard();
     sliderCoaches();
     sliderFeedback();
+    validityForm(inputPhoneContacts, inputNameContacts);
+    sendUserFormData(contactsForm);
   });
 });
 
