@@ -17,7 +17,7 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-left: 60px;
 
   @include vp-1199 {
@@ -30,12 +30,15 @@
 .gym__description {
   max-width: 355px;
   margin-right: 25px;
+  padding-top: 25px;
 
   @include vp-1199 {
+    align-self: center;
     min-width: 502px;
     max-width: 74%;
     margin-right: 0;
     margin-bottom: 32px;
+    padding-top: 0;
 
     text-align: center;
   }
@@ -128,7 +131,7 @@
 
 .gym__video {
   position: absolute;
-  bottom: -114px;
+  top: 287px;
   left: 437px;
 
   display: flex;
@@ -138,6 +141,7 @@
   height: 228px;
 
   @include vp-1199 {
+    top: auto;
     bottom: -84px;
     left: calc(50% - 133px);
 

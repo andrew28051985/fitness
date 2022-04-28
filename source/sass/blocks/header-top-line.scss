@@ -1,10 +1,10 @@
 .header-top-line {
   @include vp-767 {
-    margin-bottom: 72px;
+    margin-bottom: 68px;
   }
 }
 
-.header-top-line__wrapper {
+.header-top-line__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +18,7 @@
   }
 }
 
-.header-top-line__wrapper a {
+.header-top-line__nav a {
   flex-shrink: 0;
   align-self: start;
 }
@@ -28,6 +28,10 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .header-top-line__contacts a {

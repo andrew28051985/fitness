@@ -31,9 +31,12 @@ const sliderCoaches = () => {
 
 const sliderFeedback = () => {
   const swiperFeedback = new Swiper('.mySwiper-feedback', {
-    slidesPerView: 1,
+    slidesPerView: 'auto',
     spaceBetween: 40,
     slidesPerGroup: 1,
+    freeMode: true,
+    autoHeight: false,
+    setWrapperSize: false,
     loop: false,
     loopFillGroupWithBlank: false,
     navigation: {
@@ -51,6 +54,9 @@ const sliderFeedback = () => {
         spaceBetween: 40,
       },
     },
+  });
+  swiperFeedback.on('slideChange', function () {
+    console.log(swiperFeedback.autoHeight);
   });
 };
 

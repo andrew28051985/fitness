@@ -1889,7 +1889,7 @@ button,
   pointer-events: auto;
 }
 
-.header-top-line__wrapper {
+.header-top-line__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1902,7 +1902,7 @@ button,
   padding: 30px 0 0;
 }
 
-.header-top-line__wrapper a {
+.header-top-line__nav a {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   -ms-flex-item-align: start;
@@ -1922,6 +1922,9 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .header-top-line__contacts a {
@@ -2062,17 +2065,11 @@ button,
   list-style: none;
 }
 
-.main-nav__item a {
-  display: block;
+.main-nav__item p {
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
-}
-
-.main-nav__item a:hover,
-.main-nav__item a:focus,
-.main-nav__item a:active {
-  opacity: 0.8;
 }
 
 .gym {
@@ -2088,15 +2085,16 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding-left: 60px;
 }
 
 .gym__description {
   max-width: 355px;
   margin-right: 25px;
+  padding-top: 25px;
 }
 
 .gym__description h2,
@@ -2141,7 +2139,7 @@ button,
 
 .gym__video {
   position: absolute;
-  bottom: -114px;
+  top: 287px;
   left: 437px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2204,7 +2202,7 @@ button,
 }
 
 .subscription .title {
-  margin-bottom: 17px;
+  margin-bottom: 13px;
   text-align: center;
 }
 
@@ -2318,22 +2316,22 @@ button,
 }
 
 .card--active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
 }
 
 .card--list {
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: 40px;
+  -ms-grid-columns: (minmax(300px, 360px))[3];
+  grid-template-columns: repeat(3, minmax(300px, 360px));
 }
 
 .card__item {
   z-index: 3;
-  width: 33%;
-  max-width: 360px;
-  margin-right: 40px;
+  width: 100%;
   padding: 56px 10px 65px;
   overflow: hidden;
   text-align: center;
@@ -3167,7 +3165,6 @@ button,
 .feedback .slider {
   position: relative;
   width: 560px;
-  height: 242px;
   margin: 0 auto;
 }
 
@@ -3212,8 +3209,6 @@ button,
   display: -ms-grid;
   display: grid;
   width: 100%;
-  height: 155px;
-  overflow-y: auto;
   gap: 13px 28px;
   -ms-grid-columns: ()[], minmax(-webkit-min-content, 2fr);
   -ms-grid-columns: ()[], minmax(min-content, 2fr);
@@ -3414,6 +3409,7 @@ button,
 
 .contacts__description-wrapper p,
 .contacts__description-wrapper a {
+  display: block;
   margin: 0;
   font-weight: 400;
   font-size: 14px;
@@ -3558,7 +3554,7 @@ button,
     margin-right: 20px;
   }
 
-  .header-top-line__wrapper {
+  .header-top-line__nav {
     padding: 40px 0 18px;
   }
 
@@ -3642,10 +3638,14 @@ button,
   }
 
   .gym__description {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     min-width: 502px;
     max-width: 74%;
     margin-right: 0;
     margin-bottom: 32px;
+    padding-top: 0;
     text-align: center;
   }
 
@@ -3668,6 +3668,7 @@ button,
   }
 
   .gym__video {
+    top: auto;
     bottom: -84px;
     left: calc(50% - 133px);
     width: 266px;
@@ -3685,7 +3686,7 @@ button,
   }
 
   .subscription .title {
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   .subscription__tabs {
@@ -3730,12 +3731,17 @@ button,
     flex-direction: column;
   }
 
+  .card--list {
+    gap: 50px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .card__item {
     width: 100%;
     min-width: 442px;
     max-width: 873px;
     margin-right: 0;
-    margin-bottom: 49px;
   }
 
   .card__item:last-child {
@@ -4184,10 +4190,10 @@ button,
   }
 
   .header-top-line {
-    margin-bottom: 72px;
+    margin-bottom: 68px;
   }
 
-  .header-top-line__wrapper {
+  .header-top-line__nav {
     padding: 20px 0 0;
   }
 
@@ -4308,10 +4314,13 @@ button,
     line-height: 24px;
   }
 
+  .card--list {
+    gap: 37px;
+  }
+
   .card__item {
     min-width: 290px;
     max-width: 737px;
-    margin-bottom: 37px;
     padding: 51px 10px 54px;
   }
 
@@ -4589,8 +4598,7 @@ button,
   }
 
   .feedback .slider {
-    width: 226px;
-    height: 335px;
+    width: 78%;
   }
 
   .feedback__slide {
@@ -4599,7 +4607,7 @@ button,
   }
 
   .feedback__slide h3 {
-    margin: 9px 8px 0 0;
+    margin: 9px 0 0 0;
     line-height: 25px;
   }
 
@@ -4611,7 +4619,6 @@ button,
   }
 
   .feedback__slide-wrapper {
-    height: 260px;
     gap: 15px 15px;
   }
 

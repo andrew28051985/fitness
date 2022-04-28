@@ -25,16 +25,10 @@
   list-style: none;
 }
 
-.main-nav__item a {
-  display: block;
+.main-nav__item p {
+  margin: 0;
 
   font-size: 14px;
   line-height: 21px;
   color: $color-default-white;
-
-  &:hover,
-  &:focus,
-  &:active {
-    opacity: 0.8;
-  }
 }

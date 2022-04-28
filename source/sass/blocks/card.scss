@@ -8,7 +8,7 @@
   }
 
   &--active {
-    display: flex;
+    display: grid;
   }
 }
 
@@ -17,14 +17,22 @@
   padding: 0;
 
   list-style: none;
+
+  gap: 40px;
+  grid-template-columns: repeat(3, minmax(300px,360px));
+  @include vp-1199 {
+    gap: 50px;
+    grid-template-columns: 1fr;
+  }
+  @include vp-767 {
+    gap: 37px;
+  }
 }
 
 .card__item {
   z-index: 3;
 
-  width: 33%;
-  max-width: 360px;
-  margin-right: 40px;
+  width: 100%;
   padding: 56px 10px 65px;
   overflow: hidden;
 
@@ -37,12 +45,10 @@
     min-width: 442px;
     max-width: 873px;
     margin-right: 0;
-    margin-bottom: 49px;
   }
   @include vp-767 {
     min-width: 290px;
     max-width: 737px;
-    margin-bottom: 37px;
     padding: 51px 10px 54px;
   }
 
