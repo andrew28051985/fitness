@@ -31,11 +31,12 @@ const sliderCoaches = () => {
 
 const sliderFeedback = () => {
   const swiperFeedback = new Swiper('.mySwiper-feedback', {
-    slidesPerView: 'auto',
+    //slidesPerView: 'auto',
+    slidesPerView: 1,
     spaceBetween: 40,
     slidesPerGroup: 1,
-    freeMode: true,
-    autoHeight: false,
+    freeMode: false,
+    autoHeight: true,
     setWrapperSize: false,
     loop: false,
     loopFillGroupWithBlank: false,

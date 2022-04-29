@@ -44,7 +44,7 @@
 
   &--left {
     @include vp-1199 {
-      margin-right: 40px;
+      margin-right: 10px;
     }
     @include vp-767 {
       align-self: flex-start;
