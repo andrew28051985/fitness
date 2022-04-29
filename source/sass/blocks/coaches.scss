@@ -60,7 +60,7 @@
     margin-left: -6px;
   }
   @include vp-767 {
-    width: 108%;
+    width: 655px;
     max-width: 108%;
     margin-left: -8px;
   }
@@ -75,7 +75,8 @@
   width: 100%;
   height: 100%;
   padding: 53px 30px 30px 36px;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
 
   color: $color-default-white;
 
@@ -83,6 +84,7 @@
   cursor: pointer;
 
   @include vp-767 {
+    justify-content: center;
     padding: 42px 25px 30px;
   }
 }
@@ -95,6 +97,11 @@
   display: flex;
   width: 100%;
   height: 100%;
+
+  @include vp-1199 {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .coaches__slide-hover h3 {
@@ -163,8 +170,12 @@
     width: 566px;
   }
   @include vp-767 {
-    width: 226px;
-    height: 274px;
+    width: 78%;
+    //width: 226px;
+    //height: 274px;
+    min-width: 226px;
+    max-width: 519px;
+    height: auto;
   }
 }
 
