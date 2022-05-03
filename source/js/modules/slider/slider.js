@@ -31,7 +31,6 @@ const sliderCoaches = () => {
 
 const sliderFeedback = () => {
   const swiperFeedback = new Swiper('.mySwiper-feedback', {
-    //slidesPerView: 'auto',
     slidesPerView: 1,
     spaceBetween: 40,
     slidesPerGroup: 1,
@@ -57,7 +56,7 @@ const sliderFeedback = () => {
     },
   });
   swiperFeedback.on('slideChange', function () {
-    console.log(swiperFeedback.autoHeight);
+    swiperFeedback.el.children[0].style.height = '';
   });
 };
 
